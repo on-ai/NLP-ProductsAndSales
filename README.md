@@ -18,7 +18,11 @@ The actual items sold along with the reviews are through the json, loaded into a
 
 ![Desc](./pictures/AmazonProductsReviews.png "Desc")<br><br>
 
-The word_tokenize method is a part of the Natural Language Toolkit (NLTK) package in Python. It’s used to split a given text or sentence into individual words
+We are going to rely on the **nltk** package, from which we have to download some huge libraries<br>
+Calling the word_tokenize method uses NLTK’s recommended word tokenizer, which is currently an improved TreebankWordTokenizer along with PunktSentenceTokenizer for the specified language<br>
+The method returns a tokenized copy of the text, where each token is a separate word from the input text<br>
+The **Sentiment Analysis** starts by identifying the positive and negative words among the words returns by the tokenizer<br>
+Eventually, the **SentimentIntensityAnalyzer** is imported from nltk.sentiment. After that import, the functioning uses the Vader Sentiment metrics
 
 # Text mining using LDA
 
@@ -33,7 +37,9 @@ The word_tokenize method is a part of the Natural Language Toolkit (NLTK) packag
 **Topic Distribution**: LDA assumes that each document is a mixture of a small number of topics and that each word’s creation is attributable to one of the document’s topics<br>
 **Co-occurrence of Words**: LDA groups commonly co-occurring words into sets of topics. Each topic is modeled as a probability distribution across a vocabulary of words<br>
 **Document Representation**: Each document in the collection is then represented in terms of those topics<br><br>
-In essence, LDA attempts to map all the documents and the words within them to a set of hidden topics so that the words in each document are mostly captured by those imagined topics<br>It’s a powerful tool for the automatic organization, understanding, searching, and summarization of large bodies of text
+In essence, LDA attempts to map all the documents and the words within them to a set of hidden topics so that the words in each document are mostly captured by those imagined topics<br>It’s a powerful tool for the automatic organization, understanding, searching, and summarization of large bodies of text<br>
+# Distribution of Sentiment Scores: Low-Star Reviews
 
 ![Desc](./pictures/Low-StarReviews.png "Desc Inter")<br><br>
+# Distribution of Sentiment Scores: High-Star Reviews
 ![Desc](./pictures/High-StarReviews.png "Desc Inter")<br><br>

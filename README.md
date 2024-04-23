@@ -18,8 +18,10 @@ The actual items sold along with the reviews are through the json, loaded into a
 
 ![Desc](./pictures/AmazonProductsReviews.png "Desc")<br><br>
 
+# Text mining using NLTK
+
 We are going to rely on the **nltk** package, from which we have to download some huge libraries<br>
-Calling the word_tokenize method uses NLTK’s recommended word tokenizer, which is currently an improved TreebankWordTokenizer along with PunktSentenceTokenizer for the specified language<br>
+Calling the **word_tokenize** method uses NLTK’s recommended word tokenizer, which is currently an improved TreebankWordTokenizer along with PunktSentenceTokenizer for the specified language<br>
 The method returns a tokenized copy of the text, where each token is a separate word from the input text<br>
 The **Sentiment Analysis** starts by identifying the positive and negative words among the words returns by the tokenizer<br>
 Eventually, the **SentimentIntensityAnalyzer** is imported from nltk.sentiment. After that import, the functioning uses the Vader Sentiment metrics
